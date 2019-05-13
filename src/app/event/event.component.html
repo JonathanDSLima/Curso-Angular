@@ -1,0 +1,21 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <section>
+                <button type="button" class="btn btn-outline-info" [disabled]="!btnEnable" (click)="save()">Save</button>
+                <button type="button" class="btn btn-outline-warning" [disabled]="!btnEnable" (click)="inc()">{{buttonName}}</button>
+            </section>
+
+            <section>
+                <button type="button" class="btn btn-outline-dark" [disabled]="!btnEnable">Black</button>
+                <button type="button" class="btn btn-outline-danger" [disabled]="!btnEnable">Danger</button>
+
+
+            </section>
+            <section>
+                <button type="button" class="btn btn-outline-secondary" (click)="disable()" [disabled]="!btnEnable">Disable</button>
+
+            </section>
+
+        </div>
+    </div>
