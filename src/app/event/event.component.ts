@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'event',
   templateUrl: './event.component.html',
@@ -9,7 +8,6 @@ export class EventComponent implements OnInit {
 
   buttonName = "My Button";
   i = 0;
-
 
 
   constructor() { }
@@ -33,8 +31,12 @@ export class EventComponent implements OnInit {
 
     setTimeout(() => {
       this.btnEnable = true;
-
+      
     }, 3000)
+  }
+
+  cbChange(event){
+    console.log(event);
   }
 
 }
