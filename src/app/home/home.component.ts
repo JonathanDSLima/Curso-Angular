@@ -7,17 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  colors = [ 'btn btn-primary', 'btn btn-secondary', 'btn btn-success',
-  'btn btn-danger', 'btn btn-warning', 'btn btn-info','btn btn-dark',
-  'btn btn-light']
-  idx = 0;
+
 
   constructor() { }
 
   ngOnInit() {
-    setInterval(() =>{
-      this.idx = (this.idx+1) % this.colors.length;
-    }, 1000)
+    
     
   }
 

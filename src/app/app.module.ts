@@ -7,6 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { EventComponent } from './event/event.component';
 import { AngularmaterialModule } from './angularmaterial/Angular-Material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TwoWayComponent } from './two-way/two-way.component';
+import { FormsModule } from '@angular/forms'
 
 
 
@@ -14,14 +16,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   declarations: [
     AppComponent,
     HomeComponent,
-    EventComponent
+    EventComponent,
+    TwoWayComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularmaterialModule,
-    BrowserAnimationsModule
-
+    BrowserAnimationsModule,
+    FormsModule 
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

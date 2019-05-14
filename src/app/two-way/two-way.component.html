@@ -1,0 +1,29 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <section id="page">
+
+                <mat-card>
+                    <mat-card-content>
+
+                        <form>
+                            <mat-form-field class="CARD">
+                                <input matInput placeholder="Enter your first name" [(ngModel)]="fName" name="anyname1">
+                            </mat-form-field>
+
+                            <mat-form-field class="CARD">
+                                <input matInput placeholder="Enter your last name" [(ngModel)]="lName" name="anyname2">
+                            </mat-form-field>
+                        </form>
+
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <p>{{fName}}</p>
+                        <p>{{lName}}</p>
+                    </mat-card-actions>
+                </mat-card>
+
+            </section>
+        </div>
+    </div>
+</div>

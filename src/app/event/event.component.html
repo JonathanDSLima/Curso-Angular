@@ -1,6 +1,9 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-12">
+            <section>
+                <button mat-raised-button [color]="colors[idx]"> Switch </button>
+            </section>
 
             <section>
                 <button mat-raised-button color="primary" [disabled]="!btnEnable" (click)="save()">Save</button>
@@ -11,19 +14,48 @@
                 <button mat-raised-button color="accent" [disabled]="!btnEnable">Black</button>
                 <button mat-raised-button color="accent" [disabled]="!btnEnable">Danger</button>
             </section>
-            
+
             <section>
                 <button mat-fab color="basic" (click)="disable()" [disabled]="!btnEnable">Disable</button>
             </section>
 
-            <section >
-                <div class="form-check"(change) = "cbChange($event)" >
-                    <input class="form-check-input" type="checkbox" value="" id="true">
-                    <label class="form-check-label" for="true">
-                      Disable / Enable
-                    </label>
-                  </div>
+            <section>
+                <mat-checkbox (change)="cbChange($event)">Check me!</mat-checkbox>
             </section>
 
+            <section>
+
+                <mat-card>
+                    <mat-card-content>
+                        <mat-form-field>
+                            <mat-label>Marca</mat-label>
+                            <mat-select [disabled]="selectDisabled" (selectionChange)="selecCg($event)">
+                                <mat-option *ngFor="let marca of marcas" [value]="marca.value">
+                                    {{marca.viewValue}}
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </mat-card-content>
+                </mat-card>
+
+            </section>
+
+            <section>
+
+                <mat-card>
+                    <mat-card-content>
+                        <mat-form-field>
+                            <input matInput placeholder="First Name" (input)="inputName = $event.target.value" [value]="inputName">
+                        </mat-form-field>
+                    </mat-card-content>
+                </mat-card>
+
+            </section>
+            <section>
+                <mat-card-actions>
+                    Name: {{inputName}}
+                </mat-card-actions>
+            </section>
         </div>
     </div>
+</div>
