@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Marca } from '../models/marca';
+import { Marca } from '../../models/marca';
 @Component({
   selector: 'event',
   templateUrl: './event.component.html',

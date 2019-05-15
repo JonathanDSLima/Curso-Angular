@@ -1,0 +1,52 @@
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+mat-card-footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.myClass1 {
+    font-size: 26px;
+    color: red;
+    font-weight: 200;
+    padding: 20px;
+    background-color: lightslategray;
+}
+
+.myClass2 {
+    font-size: 32px;
+    color: blue;
+    font-weight: 200;
+    padding: 10px;
+    background-color: turquoise;
+}
+
+.myClass3 {
+    font-size: 38px;
+    color: yellow;
+    font-weight: 200;
+    padding: 30px;
+    background-color: tomato;
+}
+
+.myClass4 {
+    font-size: 44px;
+    color: teal;
+    font-weight: 200;
+    padding: 40px;
+    background-color: hotpink;
+}

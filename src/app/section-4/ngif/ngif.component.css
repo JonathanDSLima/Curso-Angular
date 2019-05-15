@@ -5,10 +5,17 @@
     margin: 0 auto;
 }
 
-#page {
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 20px;
 }
 
-.CARD {
+.card-length {
     width: 100%;
+}
+
+.chek {
+    margin: 20px;
 }

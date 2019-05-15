@@ -10,6 +10,13 @@ export class TwoWayComponent implements OnInit {
   fName: string = "";
   lName: string = "";
 
+  client = {
+    firstName: "Baphomet",
+    lastName: "Templário",
+    address: "Hell",
+    age: 0
+  }
+
   constructor() { }
 
   ngOnInit() {

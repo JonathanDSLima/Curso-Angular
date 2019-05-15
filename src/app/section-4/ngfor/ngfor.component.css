@@ -1,0 +1,35 @@
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.city {
+    width: 328.44px;
+    height: 598px;
+}
+
+.Gambiarra {
+    margin-bottom: 1rem;
+}
+
+mat-list-option {
+    margin-right: 10rem;
+}
+
+.card-length {
+    width: 100%;
+}
+
+::selection {
+    color: #ffffff;
+    background: #eb6254;
+}

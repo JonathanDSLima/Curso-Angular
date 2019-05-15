@@ -7,6 +7,10 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatListModule } from '@angular/material/list';
+import { MatIconModule } from '@angular/material/icon';
+
 
 const MATERIAL = [
   MatCheckboxModule,
@@ -15,7 +19,10 @@ const MATERIAL = [
   MatInputModule,
   MatSelectModule,
   MatFormFieldModule,
-  MatDividerModule
+  MatDividerModule,
+  MatRadioModule,
+  MatListModule,
+  MatIconModule
 ]
 
 
