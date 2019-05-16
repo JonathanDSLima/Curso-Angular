@@ -10,6 +10,8 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 
 const MATERIAL = [
@@ -22,7 +24,9 @@ const MATERIAL = [
   MatDividerModule,
   MatRadioModule,
   MatListModule,
-  MatIconModule
+  MatIconModule,
+  MatProgressBarModule,
+  MatProgressSpinnerModule
 ]
 
 

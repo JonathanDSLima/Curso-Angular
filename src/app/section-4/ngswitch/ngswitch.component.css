@@ -1,0 +1,22 @@
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+mat-radio-button {
+    margin: 10px;
+}
+
+::selection {
+    color: #ffffff;
+    background: #eb6254;
+}

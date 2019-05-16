@@ -13,7 +13,9 @@ import { NgstyleComponent } from './section-4/ngstyle/ngstyle.component';
 import { Home1Component } from './section-4/home1/home1.component';
 import { NgclassComponent } from './section-4/ngclass/ngclass.component';
 import { NgifComponent } from './section-4/ngif/ngif.component';
-import { NgforComponent } from './section-4/ngfor/ngfor.component'
+import { NgforComponent } from './section-4/ngfor/ngfor.component';
+import { NgforformComponent } from './section-4/ngforform/ngforform.component';
+import { NgswitchComponent } from './section-4/ngswitch/ngswitch.component'
 
 
 
@@ -28,6 +30,8 @@ import { NgforComponent } from './section-4/ngfor/ngfor.component'
     NgclassComponent,
     NgifComponent,
     NgforComponent,
+    NgforformComponent,
+    NgswitchComponent,
     
   ],
   imports: [

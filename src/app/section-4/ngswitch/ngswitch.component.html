@@ -1,0 +1,37 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <section>
+                <mat-card>
+                    <mat-card-title>
+                        Switch
+                    </mat-card-title>
+
+                    <mat-card-content>
+
+
+                        <p>Select the fields that you need</p>
+                        <mat-radio-group [(ngModel)]="fieldName">
+                            <mat-radio-button value="button">Button</mat-radio-button>
+                            <mat-radio-button value="checkbox">Checkbox</mat-radio-button>
+                            <mat-radio-button value="progress-bar">Progress-bar</mat-radio-button>
+                            <mat-radio-button value="spinner">Spinner</mat-radio-button>
+                        </mat-radio-group>
+                        <mat-divider></mat-divider>
+
+
+                        <br><br>
+
+                        <section [ngSwitch]="fieldName">
+                            <button *ngSwitchCase="'button'" mat-raised-button color="warn">Button</button>
+                            <mat-checkbox *ngSwitchCase="'checkbox'">Checkbox</mat-checkbox>
+                            <mat-progress-bar *ngSwitchCase="'progress-bar'" color="warn" mode="indeterminate"></mat-progress-bar>
+                            <mat-progress-spinner *ngSwitchCase="'spinner'" mode="indeterminate" color="warn"></mat-progress-spinner>
+                        </section>
+
+                    </mat-card-content>
+                </mat-card>
+            </section>
+        </div>
+    </div>
+</div>

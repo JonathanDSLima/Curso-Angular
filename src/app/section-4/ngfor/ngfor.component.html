@@ -2,42 +2,18 @@
     <div class="row">
         <div class="col-12">
             <section>
-                <section>
-                    <mat-card>
-                        <mat-card-title>
-                            Inaptos
-                        </mat-card-title>
-                        <mat-divider></mat-divider>
-                        <mat-selection-list role="list" *ngFor="let name of names">
-                            <mat-icon matListIcon>account_box</mat-icon>
-                            <mat-list-option matLine>{{name}}</mat-list-option>
-                        </mat-selection-list>
-                    </mat-card>
-                </section>
-                <section>
 
-
-                    <mat-card class="city">
-                        <mat-card-title>
-                            cities
-                        </mat-card-title>
-                        <mat-divider></mat-divider>
-                        <mat-card-content>
-                            <mat-list>
-                                <mat-list-item class="Gambiarra" role="list" *ngFor="let city of cities">
-                                    <mat-icon matListIcon>location_city</mat-icon>
-                                    <h4 matLine>{{city.name}}</h4>
-                                    <h4 matLine>{{city.state}}</h4>
-                                </mat-list-item>
-                            </mat-list>
-                        </mat-card-content>
-                    </mat-card>
-
-                </section>
+                <mat-card>
+                    <mat-card-title>
+                        Inaptos
+                    </mat-card-title>
+                    <mat-divider></mat-divider>
+                    <mat-selection-list role="list" *ngFor="let name of names">
+                        <mat-icon matListIcon>account_box</mat-icon>
+                        <mat-list-option matLine>{{name}}</mat-list-option>
+                    </mat-selection-list>
+                </mat-card>
             </section>
-
-
-
 
         </div>
     </div>

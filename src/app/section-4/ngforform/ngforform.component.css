@@ -1,0 +1,30 @@
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.trash {
+    color: darkcyan;
+}
+
+mat-card {
+    width: 100%;
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+::selection {
+    color: #ffffff;
+    background: #eb6254;
+}
